@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fast-Food Finder</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Fast-Food Finder</h1>
+    <div class="header-buttons">
+      <button class="add-btn">Add Now</button>
+      <button class="logout-btn">Logout</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="fast-food-list">
+      <ul>
+        <li>
+            <div class="fast-food-item">
+              <h2>Pizzagram</h2>
+              <div class="progress-bar"></div>
+              <div class="actions">
+                <button class="edit-btn">Edit</button>
+                <button class="delete-btn">Delete</button>
+                <button class="comment-btn">Comment</button>
+                <button class="view-comments-btn">View</button>
+              </div>
+            </div>
+          </li>
+        <li>
+          <div class="fast-food-item">
+            <h2>Koul Tounsi</h2>
+            <div class="progress-bar"></div>
+            <div class="actions">
+              <button class="edit-btn">Edit</button>
+              <button class="delete-btn">Delete</button>
+              <button class="comment-btn">Comment</button>
+              <button class="view-comments-btn">View</button>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="fast-food-item">
+            <h2>Quetal</h2>
+            <div class="progress-bar"></div>
+            <div class="actions">
+              <button class="edit-btn">Edit</button>
+              <button class="delete-btn">Delete</button>
+              <button class="comment-btn">Comment</button>
+              <button class="view-comments-btn">View</button>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="fast-food-item">
+            <h2>Kukuç</h2>
+            <div class="progress-bar"></div>
+            <div class="actions">
+              <button class="edit-btn">Edit</button>
+              <button class="delete-btn">Delete</button>
+              <button class="comment-btn">Comment</button>
+              <button class="view-comments-btn">View</button>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="fast-food-item">
+            <h2>Hamburgasm</h2>
+            <div class="progress-bar"></div>
+            <div class="actions">
+              <button class="edit-btn">Edit</button>
+              <button class="delete-btn">Delete</button>
+              <button class="comment-btn">Comment</button>
+              <button class="view-comments-btn">View</button>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="fast-food-item">
+            <h2>Tornado</h2>
+            <div class="progress-bar"></div>
+            <div class="actions">
+              <button class="edit-btn">Edit</button>
+              <button class="delete-btn">Delete</button>
+              <button class="comment-btn">Comment</button>
+              <button class="view-comments-btn">View</button>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="fast-food-item">
+            <h2>Glovo</h2>
+            <div class="progress-bar"></div>
+            <div class="actions">
+              <button class="edit-btn">Edit</button>
+              <button class="delete-btn">Delete</button>
+              <button class="comment-btn">Comment</button>
+              <button class="view-comments-btn">View</button>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="fast-food-item">
+            <h2>MM</h2>
+            <div class="progress-bar"></div>
+            <div class="actions">
+              <button class="edit-btn">Edit</button>
+              <button class="delete-btn">Delete</button>
+              <button class="comment-btn">Comment</button>
+              <button class="view-comments-btn">View</button>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Fieye. All rights reserved.</p>
+  </footer>
+  <script>
+    // Function to generate a random color
+    function getRandomColor() {
+      const letters = '0123456789ABCDEF';
+      let color = '#';
+      for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    }
+
+    // Set random background color for each progress bar
+    const progressBars = document.querySelectorAll('.progress-bar');
+    progressBars.forEach((progressBar) => {
+      const randomColor = getRandomColor();
+      progressBar.style.backgroundColor = randomColor;
+    });
+  </script>
+</body>
+</html>

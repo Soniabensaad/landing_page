@@ -1,0 +1,134 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Basic styling for the header and navigation */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header-buttons button {
+    margin-left: 10px;
+    background-color: #FF5500;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Styling for the fast-food list */
+  #fast-food-list {
+    padding: 30px; /* Increased padding for more space */
+  }
+  
+  #fast-food-list ul {
+    list-style: none;
+  }
+  
+  .fast-food-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px; /* Increased margin for more space between list items */
+  }
+  
+  
+  .progress-bar {
+    flex: 1;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin: 0 10px;
+  }
+  
+  /* Styling for the actions buttons */
+  .actions button {
+    margin-right: 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  
+  .edit {
+    border: 1.5px solid rgb(141, 181, 145);
+    color: rgb(141, 181, 145);
+  }
+  
+  .edit:hover {
+    background-color: rgb(182, 223, 186);
+  }
+  
+  .edit:active {
+    border: 1.5px solid rgb(141, 181, 145);
+    color: rgb(255, 255, 255);
+    background-color: rgb(141, 181, 145);
+  }
+  
+  .delete {
+    border: 1.5px solid rgb(255, 175, 163);
+    color: rgb(255, 175, 163);
+  }
+  
+  .delete:hover {
+    background-color: rgb(255, 201, 193);
+  }
+  
+  .delete:active {
+    border: 1.5px solid rgb(255, 175, 163);
+    background-color: rgb(255, 175, 163);
+    color: rgb(255, 255, 255);
+  }
+  
+  .comment {
+    border: 1.5px solid rgb(52, 110, 168);
+    color: rgb(52, 110, 168);
+  }
+  
+  .comment:hover {
+    background-color: rgb(143, 191, 239);
+  }
+  
+  .comment:active {
+    border: 1.5px solid rgb(52, 110, 168);
+    background-color: rgb(52, 110, 168);
+    color: rgb(255, 255, 255);
+  }
+  
+  .view {
+    margin-left: 10px;
+    padding: 5px 5px;
+    border: 1.5px solid rgb(182, 156, 6);
+    color: rgb(182, 156, 6);
+  }
+  
+  .view:hover {
+    background-color: rgb(213, 202, 144);
+  }
+  
+  .view:active {
+    border: 1.5px solid rgb(182, 156, 6);
+    background-color: rgb(182, 156, 6);
+    color: rgb(255, 255, 255);
+  }
+  
+  /* Styling for the footer */
+  footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 30px;
+  }
+  
